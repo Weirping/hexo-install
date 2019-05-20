@@ -41,6 +41,9 @@ echo
 echo +++++++++++++++++++++++++++++++++++++++++++++++
 echo install NexT theme
 git clone https://github.com/theme-next/hexo-theme-next $BLOG_PATH/themes/next
+cd $BLOG_PATH/themes/next
+git checkout v6.5.0
+cd -
 echo copy NexT theme config into $BLOG_PATH/themes/next
 cp $INIT_PATH/next_config/_config.yml $BLOG_PATH/themes/next/
 echo 
